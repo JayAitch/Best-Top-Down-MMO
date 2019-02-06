@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PCNude
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+    totalSpriteSurfaceArea: 13780
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300006, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300004, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300002, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300000, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300012, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300010, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300008, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300074, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300076, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300058, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300060, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300062, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300094, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300064, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300066, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300068, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300088, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300070, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300086, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300072, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300092, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300090, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300080, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300078, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300084, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300082, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300056, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300054, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300044, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300042, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300034, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300040, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300036, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300038, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300030, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300052, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300032, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300050, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300026, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300048, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300028, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300046, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300022, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300024, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300018, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300020, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300016, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300014, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - base_db32_3
+  - base_db32_2
+  - base_db32_1
+  - base_db32_0
+  - base_db32_7
+  - base_db32_5
+  - base_db32_4
+  - base_db32_38
+  - base_db32_39
+  - base_db32_30
+  - base_db32_31
+  - base_db32_32
+  - base_db32_48
+  - base_db32_33
+  - base_db32_34
+  - base_db32_35
+  - base_db32_45
+  - base_db32_36
+  - base_db32_44
+  - base_db32_37
+  - base_db32_47
+  - base_db32_46
+  - base_db32_41
+  - base_db32_40
+  - base_db32_43
+  - base_db32_42
+  - base_db32_29
+  - base_db32_28
+  - base_db32_23
+  - base_db32_22
+  - base_db32_18
+  - base_db32_21
+  - base_db32_19
+  - base_db32_20
+  - base_db32_16
+  - base_db32_27
+  - base_db32_17
+  - base_db32_26
+  - base_db32_14
+  - base_db32_25
+  - base_db32_15
+  - base_db32_24
+  - base_db32_12
+  - base_db32_13
+  - base_db32_10
+  - base_db32_11
+  - base_db32_9
+  - base_db32_8
+  m_Tag: PCNude
+  m_IsVariant: 0
