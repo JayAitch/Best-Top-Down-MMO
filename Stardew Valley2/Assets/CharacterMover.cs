@@ -61,7 +61,7 @@ public class CharacterMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //move the character via input from controller
+        //move the character
         MoveCharacter(inputX, inputY);
     }
 
