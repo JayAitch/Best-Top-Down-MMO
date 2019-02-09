@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8135807425412842364}
   - component: {fileID: 6196960756812891059}
   - component: {fileID: 4221187188108280439}
+  - component: {fileID: 8124810023157249928}
   m_Layer: 0
   m_Name: Player Character
   m_TagString: Untagged
@@ -87,6 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c012ae87e02be0b4c80bec0927b27401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAttacking: 0
   isMoving: 1
 --- !u!212 &6196960756812891059
 SpriteRenderer:
@@ -155,3 +157,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8124810023157249928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8135807425412842305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809cd07ceb182a84cbf7e236b5478d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAnimationDirection: 0
+  currentAnimationStatep: 2
+  isMoving: 0
+  isAttacking: 0
+  yMotion: 0
+  xMotion: 0

@@ -5,114 +5,96 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private CharacterMover characterMover;
+    private CharacterAnimator characterAnimator;
 
-    private Animator charAnimator;
-    private enum AnimDirection{N,NE,E,SE,S,SW,W,NW};
-    private AnimDirection currentAnimDirection;
-    private float animationSensitivity = 0.05f;
-    public bool isMoving;
-    float yMotion = 0;// = inY;
-    float xMotion = 0;// = inX;
+    private enum PlayerDirection{ N,NE,E,SE,S,SW,W,NW};
+    private PlayerDirection currentPlayerDirection;
+    private bool isAttacking;
+    private bool isMoving = false;
+
+
+        // we will need this c# magic for our animation state when its in
+        //public bool isMovingTest
+        //{
+        //    set
+        //    {
+        //        if (Input.GetAxis("Vertical") == 0 && Input.GetAxis("Horizontal") == 0) { isMoving = false; }
+        //        else { isMoving = true; }
+        //    }
+        //    get { return isMoving; }
+        //}
+
 
     // Start is called before the first frame update
     void Start()
     {
  
         characterMover = this.GetComponent<CharacterMover>();
-        charAnimator = this.GetComponent<Animator>();
-
-        
+        characterAnimator = this.GetComponent<CharacterAnimator>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        //ChangeAnim();
 
-        // get axis input
+
+        // using controller input to move player
         characterMover.inputY = Input.GetAxis("Vertical");
         characterMover.inputX = Input.GetAxis("Horizontal");
-        ChangeAnim(characterMover.inputX, characterMover.inputY);
+
+        if (Input.GetAxis("Vertical") == 0 && Input.GetAxis("Horizontal") == 0) { isMoving = false; }
+        else { isMoving = true; }
+        // work out if we are attacking this will work but not like this
+        // TODO: change to use a state machine
+        if (Input.GetAxis("Action") > 0) { isAttacking = true; }
+        else { isAttacking = false; }
+
+        // set direction and animation states
         SetDirection(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        Debug.Log(currentAnimDirection + "facing number"   + charAnimator.GetFloat("FacingDirection"));
+        characterAnimator.UpdateAnimationState(isMoving, isAttacking, (float)currentPlayerDirection);
+
+
     }
 
 
-    float test(float inputN) {
-        inputN = inputN + (Mathf.Pow(inputN, inputN) * 0.25f);
-        inputN = Mathf.Round(inputN / 0.5f) * 0.5f;
-        return inputN;
-    }
 
+    // TODO:  move this to mover abstract class dont wanna keep pasting this
     void SetDirection(float inX, float inY) {
 
         if (inX == 0 && inY > 0)
         {
-            currentAnimDirection = AnimDirection.N;
+            currentPlayerDirection = PlayerDirection.N;
         }
         else if (inX > 0 && inY > 0)
         {
-            currentAnimDirection = AnimDirection.NE;
+            currentPlayerDirection = PlayerDirection.NE;
         }
         else if (inX > 0 && inY == 0)
         {
-            currentAnimDirection = AnimDirection.E;
+            currentPlayerDirection = PlayerDirection.E;
         }
         else if (inX > 0 && inY < 0)
         {
-            currentAnimDirection = AnimDirection.SE;
+            currentPlayerDirection = PlayerDirection.SE;
         }
         else if (inX == 0 && inY < 0)
         {
-            currentAnimDirection = AnimDirection.S;
+            currentPlayerDirection = PlayerDirection.S;
         }
         else if (inX < 0 && inY < 0)
         {
-            currentAnimDirection = AnimDirection.SW;
+            currentPlayerDirection = PlayerDirection.SW;
         }
         else if (inX < 0 && inY == 0)
         {
-            currentAnimDirection = AnimDirection.W;
+            currentPlayerDirection = PlayerDirection.W;
         }
         else if (inX < 0 && inY > 0)
         {
-            currentAnimDirection = AnimDirection.NW;
+            currentPlayerDirection = PlayerDirection.NW;
         }
     }
-    void ChangeAnim(float inX, float inY) {
 
-        //Debug.Log(test(0.05f));
-
-
-        if (Input.GetAxis("Vertical") == 0 && Input.GetAxis("Horizontal") == 0)
-        {
-            if (isMoving)
-            {
-                // yMotion = yMotion + (Mathf.Pow(yMotion, yMotion) * 0.25f);
-                //  yMotion = Mathf.Round(yMotion);
-                //   xMotion = xMotion + (Mathf.Pow(xMotion, xMotion) * 0.25f);
-                // xMotion = Mathf.Round(xMotion);
-                isMoving = false;
-            }
-  
-
-        }
-        else
-        {
-            yMotion = inY;
-            xMotion = inX;
-            isMoving = true;
-
-        }
-
-        charAnimator.SetFloat("DirectionY", yMotion);
-        charAnimator.SetFloat("DirectionX", xMotion);
-        charAnimator.SetFloat("FacingDirection", (float)currentAnimDirection);
-        charAnimator.SetBool("isWalking", isMoving);
-
-
-        //Debug.Log(isMoving);
-    }
 
 }

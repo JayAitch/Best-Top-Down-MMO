@@ -31,106 +31,112 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-    totalSpriteSurfaceArea: 13780
+    totalSpriteSurfaceArea: 14222
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300006, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300004, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300002, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300000, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300012, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300010, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300008, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300074, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300076, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300058, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300060, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300062, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300094, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300064, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300066, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300068, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300088, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300100, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300098, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300096, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
   - {fileID: 21300070, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300086, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300072, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300092, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300090, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300080, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300078, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300084, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300082, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300056, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300054, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300044, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300042, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300034, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300040, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300036, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300038, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300030, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300052, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300032, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300050, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300026, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300068, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300066, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
   - {fileID: 21300048, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300012, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300026, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
   - {fileID: 21300028, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300046, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300022, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
   - {fileID: 21300024, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300076, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300084, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300074, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300072, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300000, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300088, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300086, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300036, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300078, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300060, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300082, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300080, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300006, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300056, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300010, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300058, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300008, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300054, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
   - {fileID: 21300018, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
   - {fileID: 21300020, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
-  - {fileID: 21300016, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300034, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300022, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300032, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300030, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300092, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300094, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300090, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300042, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300046, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300044, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300064, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300062, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300050, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300004, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300052, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300002, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300038, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300040, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
   - {fileID: 21300014, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
+  - {fileID: 21300016, guid: c95fcdae5a147bb408dee3fca024cf5c, type: 3}
   m_PackedSpriteNamesToIndex:
-  - base_db32_3
-  - base_db32_2
   - base_db32_1
   - base_db32_0
-  - base_db32_7
-  - base_db32_5
-  - base_db32_4
-  - base_db32_38
-  - base_db32_39
-  - base_db32_30
-  - base_db32_31
-  - base_db32_32
-  - base_db32_48
-  - base_db32_33
-  - base_db32_34
-  - base_db32_35
-  - base_db32_45
-  - base_db32_36
-  - base_db32_44
-  - base_db32_37
-  - base_db32_47
-  - base_db32_46
-  - base_db32_41
-  - base_db32_40
-  - base_db32_43
-  - base_db32_42
-  - base_db32_29
-  - base_db32_28
-  - base_db32_23
-  - base_db32_22
-  - base_db32_18
-  - base_db32_21
-  - base_db32_19
-  - base_db32_20
-  - base_db32_16
-  - base_db32_27
-  - base_db32_17
-  - base_db32_26
-  - base_db32_14
-  - base_db32_25
-  - base_db32_15
-  - base_db32_24
-  - base_db32_12
-  - base_db32_13
-  - base_db32_10
-  - base_db32_11
-  - base_db32_9
-  - base_db32_8
+  - base_db32_6
+  - PCAttackNW3
+  - PCAttackNW2
+  - PCAttackNW1
+  - PCIdleN
+  - PCIdleSE
+  - PCWalkE1
+  - PCWalkE2
+  - PCIdleE
+  - PCWalkW2
+  - PCIdleSW
+  - PCWalkW1
+  - PCIdleW
+  - PCIdleS
+  - PCWalkSW2
+  - PCWalkSW1
+  - PCIdleNE
+  - PCAttackW1
+  - PCIdleNW
+  - PCAttackW3
+  - PCAttackW2
+  - PCAttackS1
+  - PCAttackN2
+  - PCAttackS3
+  - PCAttackN3
+  - PCAttackS2
+  - PCAttackN1
+  - PCAttackSE1
+  - PCAttackSE2
+  - PCAttackE3
+  - PCAttackSE3
+  - PCAttackE2
+  - PCAttackE1
+  - PCAttackSW2
+  - PCAttackSW3
+  - PCAttackSW1
+  - PCAttackNE1
+  - PCAttackNE3
+  - PCAttackNE2
+  - PCWalkNW2
+  - PCWalkNW1
+  - PCWalkN1
+  - PCWalkS2
+  - PCWalkN2
+  - PCWalkS1
+  - PCWalkNE1
+  - PCWalkNE2
+  - PCWalkSE1
+  - PCWalkSE2
   m_Tag: PCNude
   m_IsVariant: 0
