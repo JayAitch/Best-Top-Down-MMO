@@ -15,7 +15,7 @@ public class PlayerInteractor : MonoBehaviour
     void Update()
     {
 
-            combatActor.TakeDamage(1);
+        //    combatActor.TakeDamage(1);
 
 
     }

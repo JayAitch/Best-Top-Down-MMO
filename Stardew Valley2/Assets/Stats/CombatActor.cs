@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CombatActor : MonoBehaviour, IAttackable
 {
-    private CbtStatSheet CombatStats;
+    // actors current combat stats
+    private CombatStats CombatStats;
     //temp stats
     public int hp;
     public int phyDef;
@@ -15,49 +16,54 @@ public class CombatActor : MonoBehaviour, IAttackable
     public float attackRange;
     // temp
 
-    private CharCombatStats statSheet;
+    private CombatStats statSheet;
 
     void Start()
     {
-        CombatStats = new CbtStatSheet();
-        CombatStats.HealthPoints = hp;
-        CombatStats.PhyDef = phyDef;
-        CombatStats.MagDef = magDef;
-        CombatStats.PhyAttack = phyAttack;
-        CombatStats.MagAttack = magAttack;
-        CombatStats.AttackSpeed = attackSpeed;
-        CombatStats.AttackRange = attackRange;
+        CombatStats = new CombatStats
+        {
+            HealthPoints = hp,
+            PhyDef = phyDef,
+            MagDef = magDef,
+            PhyAttack = phyAttack,
+            MagAttack = magAttack,
+            AttackSpeed = attackSpeed,
+            AttackRange = attackRange
+        };
     }
 
 
-    public CharCombatStats GetCombatStats()
+    public structCombatStats GetCombatStats()
     {
         return CombatStats.combatSheet;
     }
 
 
-    public void TakeDamage(int amnt)
-    {
-        CombatStats.HealthPoints = CombatStats.HealthPoints - amnt;
+    public void TakeDamage(structDamage DamageRecieved)
+    { 
+ 
+        int damageTaken;
+        // ignore the harvsting mods as this is a combat character
+        // todo: compensate with resistances
+        damageTaken = (int)Mathf.Round((DamageRecieved.MagDamageAmnt + DamageRecieved.PhyDamageAmnt) * DamageRecieved.CombatDamageMod); 
+        CombatStats.HealthPoints = CombatStats.HealthPoints - damageTaken;
         Debug.Log(CombatStats.HealthPoints);
-       // statSheet.hitPoints = statSheet.hitPoints - amnt;
     }
 
-    public int GetDamageDealt(int amnt, CharCombatStats hitTarget)
+    public structDamage GetDamageDealt(int amnt, structCombatStats hitTarget)
     {
-        return 5;
+        // temperyily hard coded damage
+        structDamage dmgDealt = new structDamage {
+            CombatDamageMod = 1,
+            WoodDamageMod = 1,
+            StoneDamageMod = 0,
+            MagDamageAmnt = 0,
+            PhyDamageAmnt = 10
+        };
+        return dmgDealt;
     }
 
-    //void IAttackable.InitCharacterSheet(int hp, int phyDef, int magDef, int magAttack, int phyAttack, float attackSpeed, float attackRange)
-    //{
-    //    statSheet.hitPoints = hp;
-    //    statSheet.magDef = magDef;
-    //    statSheet.phyDef = phyDef;
-    //    statSheet.magAttack = magAttack;
-    //    statSheet.phyAttack = phyAttack;
-    //    statSheet.attackSpeed = attackSpeed;
-    //    statSheet.attackRange = attackRange;
-    //}
+
 }
 
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct CharCombatStats
+public struct structCombatStats
 {
     public int healthPoints;
     public int magDef;

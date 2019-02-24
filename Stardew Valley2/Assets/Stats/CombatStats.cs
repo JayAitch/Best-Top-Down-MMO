@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CbtStatSheet : MonoBehaviour
+public class CombatStats : MonoBehaviour
 {
     public int HealthPoints
     {
@@ -86,9 +86,9 @@ public class CbtStatSheet : MonoBehaviour
     }
 
 
-    public CharCombatStats combatSheet;
-    public CbtStatSheet() {
-        combatSheet = new CharCombatStats();
+    public structCombatStats combatSheet;
+    public CombatStats() {
+        combatSheet = new structCombatStats();
     }
 
 

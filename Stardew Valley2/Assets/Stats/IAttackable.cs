@@ -6,6 +6,6 @@ public interface IAttackable
 {
 
    // void InitCharacterSheet(int hp, int phyDef, int magDef, int magAttack, int phyAttack, float attackSpeed, float attackRange);
-    void TakeDamage(int amnt);
+    void TakeDamage(structDamage damage);
 
 }
