@@ -110,7 +110,7 @@ public class BaseHarvestable : MonoBehaviour, IAttackable, IHarvestable, IHittab
     structHarvest[] MakeHarvestArray() {
         structHarvest[] Harvest;
         Harvest = new structHarvest[5];
-        Harvest[0] = new structHarvest { Amount = 0, Yield = structHarvest.ResourceType.EMPTY };
+        Harvest[0] = new structHarvest { Amount = 0, Yield = new Item() };
         return Harvest;
     }
 
