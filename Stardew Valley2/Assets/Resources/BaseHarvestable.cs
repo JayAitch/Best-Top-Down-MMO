@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseHarvestable : MonoBehaviour, IAttackable, IHarvestable
+public class BaseHarvestable : MonoBehaviour, IAttackable, IHarvestable, IHittable
 {
     public structHarvestableStats harvestableStats;
     public int MaterialLevel
@@ -14,15 +14,6 @@ public class BaseHarvestable : MonoBehaviour, IAttackable, IHarvestable
         set
         {
             harvestableStats.MaterialLevel = value;
-        }
-    }
-    public int BaseHealth {
-        get
-        {
-            return harvestableStats.BaseHealth;
-        }
-        set {
-            harvestableStats.BaseHealth = value;
         }
     }
     public int CurrentHealth
@@ -70,18 +61,36 @@ public class BaseHarvestable : MonoBehaviour, IAttackable, IHarvestable
         }
     }
 
+
+
+
+    // TO do : Move these to a resource maker
+
+    public int BaseMaterialLevel;
+    public int BaseHealth;
+    public float BaseWoodStrengthMod;
+    public float BaseStoneStrengthMod;
+    public int BaseMaterialsRemaining;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        MaterialLevel = BaseMaterialLevel;
+        CurrentHealth = BaseHealth;
+        WoodStrengthMod = BaseWoodStrengthMod;
+        StoneStrengthMod = BaseStoneStrengthMod;
+        MaterialsRemaining = BaseMaterialsRemaining;
     }
     
     public void TakeDamage(structDamage damage)
     {
+
         int woodDamage = (int)(damage.WoodDamageMod * WoodStrengthMod);
         int stoneDamage = (int)(damage.StoneDamageMod * StoneStrengthMod);
-        int baseTotalDamage = (int)damage.CombatDamageMod + damage.MagDamageAmnt;
+        int baseTotalDamage = (int)damage.PhyDamageAmnt+ damage.MagDamageAmnt;
         int damageReceived =  (baseTotalDamage * woodDamage) + (baseTotalDamage * stoneDamage);
+        Debug.Log(CurrentHealth + "   -    " + damageReceived);
         CurrentHealth = CurrentHealth - damageReceived;
     }
 
@@ -106,9 +115,9 @@ public class BaseHarvestable : MonoBehaviour, IAttackable, IHarvestable
     }
 
 
-    // Update is called once per frame
-    void Update()
+
+    public structHarvest[] TakeHit(structDamage hitDamage)
     {
-        
+        return Harvest(hitDamage);
     }
 }

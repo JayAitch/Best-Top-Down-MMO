@@ -7,4 +7,5 @@ public struct structHarvest
     public int Amount;
     public enum ResourceType{WOOD,STONE,EMPTY}
     public ResourceType Yield;
+    public int Xp;
 }

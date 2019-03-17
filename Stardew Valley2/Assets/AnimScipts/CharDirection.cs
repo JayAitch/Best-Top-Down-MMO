@@ -45,4 +45,39 @@ public class CharDirection : MonoBehaviour
             currentCharacterDirection = CharacterDirection.NW;
         }
     }
+
+    public Vector2 getVectorDirection() {
+        Vector2 direction;
+        switch (currentCharacterDirection)
+        {
+            case CharacterDirection.N:
+                direction = new Vector2(0, 1);
+                break;
+            case CharacterDirection.NE:
+                direction = new Vector2(1, 1);
+                break;
+            case CharacterDirection.E:
+                direction = new Vector2(1, 0);
+                break;
+            case CharacterDirection.SE:
+                direction = new Vector2(1, -1);
+                break;
+            case CharacterDirection.S:
+                direction = new Vector2(0, -1);
+                break;
+            case CharacterDirection.SW:
+                direction = new Vector2(-1, -1);
+                break;
+            case CharacterDirection.W:
+                direction = new Vector2(-1, 0);
+                break;
+            case CharacterDirection.NW:
+                direction = new Vector2(-1, 1);
+                break;
+            default:
+                direction = new Vector2(0, 0);
+                break;
+        }
+            return direction;
+    }
 }

@@ -16,7 +16,7 @@ public class CharacterMover  : MonoBehaviour
     RaycastHit2D rayHit;
     // bit mask for impassible layer
 
-    public LayerMask layerMask;
+    public LayerMask unpassibleLayers;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +45,7 @@ public class CharacterMover  : MonoBehaviour
         // set new position relative to mover speed
         newPosition = new Vector2(xMovement * moverSpeed, yMovement * moverSpeed) + currentPosition;
 
-        RayHit = Physics2D.BoxCast(currentPosition, new Vector2(0.3f, 0.3f), 0, new Vector2(inputX, inputY), moverSpeed * 2, layerMask);
+        RayHit = Physics2D.BoxCast(currentPosition, new Vector2(0.3f, 0.3f), 0, new Vector2(inputX, inputY), moverSpeed * 2, unpassibleLayers);
         // make sure we arnt about to walk into an unpassible area
 
         if (RayHit)

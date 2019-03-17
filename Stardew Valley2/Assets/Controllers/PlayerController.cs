@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private CharacterMover characterMover;
     private CharacterAnimator characterAnimator;
     private CharDirection charDirection;
+    private WorldInteracter worldInteracter;
 
     private bool isAttacking;
     private bool isMoving = false;
@@ -30,7 +31,7 @@ public class PlayerController : MonoBehaviour
         charDirection = this.GetComponent<CharDirection>();
         characterMover = this.GetComponent<CharacterMover>();
         characterAnimator = this.GetComponent<CharacterAnimator>();
-
+        worldInteracter = this.GetComponent<WorldInteracter>();
     }
 
     // Update is called once per frame
@@ -46,7 +47,10 @@ public class PlayerController : MonoBehaviour
         else { isMoving = true; }
         // work out if we are attacking this will work but not like this
         // TODO: change to use a state machine
-        if (Input.GetAxis("Action") > 0) { isAttacking = true; }
+        if (Input.GetAxis("Action") > 0) {
+            isAttacking = true;
+            worldInteracter.TryHit(charDirection.getVectorDirection());
+}
         else { isAttacking = false; }
 
         // set direction and animation states
